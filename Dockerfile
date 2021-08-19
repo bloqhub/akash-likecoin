@@ -29,7 +29,7 @@ RUN go build \
 
 FROM alpine:3.5
 ARG password
-RUN apk --update add --no-cache openssh bash supervisor ca-certificates \
+RUN apk --update add --no-cache openssh bash supervisor ca-certificates curl \
   && sed -i s/#PermitRootLogin.*/PermitRootLogin\ yes/ /etc/ssh/sshd_config \
   && echo "root:$password" | chpasswd \
   && rm -rf /var/cache/apk/*
