@@ -57,7 +57,7 @@ version: "2.0"
 
 services:
   liked:
-    image: bloqhub/liked-ssh:0.0.1
+    image: bloqhub/liked-ssh:0.1
     expose:
       - port: 22656
         as: 22656
