@@ -204,6 +204,9 @@ reboot
 ```
 подключаемся и создаем валидатора
 ```
+ssh root@cluster.provider-0.prod.ams1.akash.pub -p 31549
+```
+```
 liked tx staking create-validator \
 --chain-id  "likecoin-public-testnet-3" \
 --from  validator \
